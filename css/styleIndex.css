@@ -1,0 +1,269 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    /*box-sizing:border-box;*/
+
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    min-width: 400px;
+    margin: 0% auto;
+    background-color:#F2F2F2;
+}
+
+main{
+    max-width: 1500px;
+}
+
+.top{
+    padding: 100px 55px;
+    display: flex;
+    justify-content:space-between;
+  
+}
+.top img{
+    border-radius: 5%;
+    margin-left: 5%;
+    height: auto;
+}
+.top_text{
+    font-size: larger;
+    margin-left: 5%;
+}
+
+.principal{
+    margin: 3% 3%;
+    background-color: #404040;
+    display: flex;
+    justify-content: space-between;
+    /*width: 94%;*/
+    border-radius: 30px;
+    max-width: 100%;
+}
+.principal a{
+    display: inline-block;
+    border-style: solid;
+    border-radius: 30px;
+    margin: 15% 18%;
+    padding: 5px 5px;
+    justify-content: center;
+    text-decoration: none;
+    color: #0D0D0D;
+}
+
+
+.principal a:hover{
+    background-color:#F2F2F2;
+    color:#404040;
+    transition: 0.8s;
+    
+    
+}
+.section{
+    display: flex;
+    width: 50%;
+ 
+}
+.section_text{
+  
+    font-size: 1.5rem;
+    margin-top: 20%;
+    margin-right: 2%;
+    justify-content: center;
+}
+.section_text a{
+    padding: 5px 15px;
+}
+
+.section img{
+    border-radius: 30px;
+    margin: 5% 5%;
+    height: 400px;
+    
+}
+
+.aside{
+    display: flex;
+    width: 50%;
+    margin-top: 0;
+    margin-right: 80px;
+ 
+}
+.aside_text{
+    
+    font-size: 1.5rem;
+    margin-top: 20%;
+    margin-right: 10%;
+    margin-left: 2.5%;
+    justify-content: center;
+}
+
+.aside img{
+    border-radius: 30px;
+    margin: 5% 5%;
+    height: 400px;
+}
+
+.middle{
+    display:inline-flex;
+    justify-content: center;
+    margin:5% 15%;
+}
+.middle img{
+    margin: 5%;
+    height: auto;
+}
+
+.middle_text{
+    margin: 15% 5%;
+    font-size: 18px;
+}
+.middle h2{
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+.middle a{
+    display: inline-block;
+    background-color: #404040;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #0D0D0D;
+    color:#0D0D0D ;
+    text-decoration: none;
+    justify-content: center;
+    margin: 5% 30%;
+    padding: 5px 5px;
+}
+.middle a:hover{
+    background-color:#D3F263;
+    border-color: #D3F263;
+    color:#0D0D0D;
+    transition: 0.8s;
+}
+
+.bottom{
+    background-color: #D3F263;
+    margin: 3% 5%;
+    margin-bottom: 15%;
+    justify-content: center;
+    border-radius: 25px;
+}
+.bottom_text{
+    display:inline-block;
+    justify-content: center;
+    margin:5% 30%;
+    font-size: larger;
+}
+.bottom_text p{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.bottom_text a{
+    display: inline-block;
+    background-color: #404040;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #0D0D0D;
+    color:#0D0D0D ;
+    text-decoration: none;
+    justify-content: center;
+    margin: 0% 40%;
+    padding: 5px 35px;
+}
+.bottom_text a:hover{
+    background-color:#F2F2F2;
+    border-color: #F2F2F2;
+    color:#0D0D0D;
+    transition: 0.8s;
+}
+
+/*Responsive*/
+@media(max-width:900px){
+    .top{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .top_text{
+        margin-top: 18px;
+        margin-bottom: 20px;
+
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    .principal {
+      display: flex;
+      flex-direction: column;
+      background-color: #f2f2f2;
+      width: 94%;
+      margin: 3% 3%;
+      max-width: 100%;
+    }
+  
+    .principal img {
+      margin: 5% auto;
+    }
+  
+    .principal a {
+      margin: 5% auto;
+    }
+  
+    .section,
+    .aside {
+      display: inline-block;
+      justify-content: center;
+      margin: 10% 5%;
+      width: 90%;
+      background-color: #404040;
+      border-radius: 30px;
+      max-width: 100%;
+    }
+    .section img,
+    .aside img {
+        margin: 5% auto;
+        max-width: 100%;
+        height: auto;
+  }
+  
+    .section_text,
+    .aside_text {
+      margin: 0;
+      padding-left: 30px;
+    }
+  
+    .aside_text a {
+      margin-left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .middle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    
+    .middle_text {
+      margin-top: 18px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .bottom {
+      display: inline-block;
+      margin: 3% 5%;
+    }
+  
+    .bottom_text {
+      margin: 5% 10%;
+      text-align: center;
+    }
+  
+    .bottom_text a {
+      margin: 0 auto;
+    }
+  }
