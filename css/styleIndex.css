@@ -54,7 +54,7 @@ main{
 }
 
 
-.principal a:hover{
+.principal a:hover, .newSectionsContent a:hover{
     background-color:#F2F2F2;
     color:#404040;
     transition: 0.8s;
@@ -180,6 +180,61 @@ main{
     transition: 0.8s;
 }
 
+.newSections{
+    background-color: #404040;
+    margin: 3% 5%;
+    margin-bottom: 5%;
+    justify-content: center;
+    border-radius: 25px;
+    
+}
+
+.newSectionsContent{
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    margin:5% 18%;
+    font-size: larger;
+}
+
+.newSectionsContent img{
+    display:inline-block;
+    justify-content: center;
+    margin:5% 30%;
+}
+
+.newSectionsContent a{
+    display:inline-block;
+    justify-content: center;
+    margin:3% 40%;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #0D0D0D;
+    background-color: #404040;
+}
+
+.newSectionsA{
+    margin: 3% 5%;
+    margin-bottom: 5%;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.newSectionsContentA{
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+    margin:5% 18%;
+    font-size: larger;
+}
+
+.newSectionsContentA img{
+    display:inline-block;
+    justify-content: center;
+    margin:5% 25%;
+}
 /*Responsive*/
 @media(max-width:900px){
     .top{
@@ -258,12 +313,20 @@ main{
       margin: 3% 5%;
     }
   
-    .bottom_text {
-      margin: 5% 10%;
+    .bottom_text,.newSectionsContent img {
+      margin: 5% 0%;
       text-align: center;
     }
   
     .bottom_text a {
       margin: 0 auto;
     }
-  }
+    
+    .newSectionsContentA img{
+        margin: 5% 0%;
+      text-align: center;
+    }
+    .newSectionsContentA{
+       margin: 5% 3%; 
+    }
+}
